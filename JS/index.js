@@ -11,6 +11,16 @@ function start() {
     }
     start();
     
+var node = document.createElement("LI");	
+	    function activate() {		    		    
+	      var message = document.getElementById("messageInput");
+	      //var node = document.createElement("LI");
+	      node = document.createElement("LI");	 
+	      node.classList.add("me");
+	      node.innerHTML = message.value;	      
+	      document.getElementById("listings").appendChild(node);
+	      }
+
       $(function() {
    
   var messagesRef = new Firebase("https://fitbit-flex2-integration.firebaseio.com/" + localStorage.getItem("roomid"));
@@ -47,12 +57,4 @@ function start() {
   });
 });
 
-var node = document.createElement("LI");	
-	    function activate() {		    		    
-	      var message = document.getElementById("messageInput");
-	      //var node = document.createElement("LI");
-	      node = document.createElement("LI");	 
-	      node.classList.add("me");
-	      node.innerHTML = message.value;	      
-	      document.getElementById("listings").appendChild(node);
-	      }
+
