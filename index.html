@@ -6,7 +6,76 @@
     <link rel="apple-touch-icon" href="meta/App-logo.PNG">
     <meta name="apple-mobile-web-app-capable" content="yes"> 
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <script src="CSS/index.css"></script>
+  <style>
+	  
+	  
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #424547;
+}
+
+p {
+ font-size: 16px;
+}
+
+input {
+  font-size: 24px;
+}
+
+input[type=text] {
+  color: #424547;
+  border: 1px solid #c2c2c2;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+  color: royalblue;
+}
+
+#messagesDiv {
+  background-color: black;
+  border-radius: 15px;
+  overflow: auto;
+  height: 230px;
+  width: 80%;
+  padding: 10px;
+  border: 3px solid cyan;
+  margin-bottom: 5px;
+  text-align: left;
+  color: cyan;
+  font-size: 24px;
+}
+
+#nameInput {
+  width: 26%;
+}
+
+#messageInput {
+  width: 80%;
+  color: white;
+  border: 1px solid cyan;
+  background: linear-gradient(to bottom right, black, darkgray); /* Standard syntax (must be last) */
+}
+
+li {
+  list-style: none;
+}
+
+.input {
+  
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+	  
+	  
+	  
+	  </style>
     <!-- Firebase -->
     <script src="https://cdn.firebase.com/js/client/2.0.2/firebase.js"></script>
 
