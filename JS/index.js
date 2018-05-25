@@ -28,12 +28,13 @@ function start() {
 
   return text;
                       messagesRef.push({name:name, text:text});
-        $("#messageInput").val("");
+        $("#messageInput").val("");                      
 }          
                 alert(makeid());
           } else {        
         messagesRef.push({name:name, text:text});
         $("#messageInput").val("");
+                activate();
           }
       }
   });
@@ -45,3 +46,13 @@ function start() {
     $("#messagesDiv")[0].scrollTop = $("#messagesDiv")[0].scrollHeight;
   });
 });
+
+var node = document.createElement("LI");	
+	    function activate() {		    		    
+	      var message = document.getElementById("messageInput");
+	      //var node = document.createElement("LI");
+	      node = document.createElement("LI");	 
+	      node.classList.add("me");
+	      node.innerHTML = message.value;	      
+	      document.getElementById("listings").appendChild(node);
+	      }
