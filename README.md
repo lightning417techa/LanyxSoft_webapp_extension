@@ -1,1 +1,1 @@
-# LanyxSoft_webapp_extension
+# webapp_extension
